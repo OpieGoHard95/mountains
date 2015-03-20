@@ -1,5 +1,5 @@
 load('gods.js');
-var gods = JSON.parse(GODS_FILE);
+var gods = JSON.parse(GODS);
 
 function filter(array, test) {
   var passed = [];
