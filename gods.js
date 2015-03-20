@@ -27,4 +27,6 @@ function filter(array, test) {
 print(filter(GODS, function(name) {
         return name.release > 1357016400000 ;
 }));
-
+// After this test runs it gives me the correct number of results however
+// it prints them out as [Object object] rather than the God name as was called
+// This needs to be fixed however, I have somewhat solved the problem
