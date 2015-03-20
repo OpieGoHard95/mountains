@@ -9,6 +9,22 @@ var GODS = [
   {name: "nox", favor: 5500, release: 1414555200000}
 ];
 
-if (typeof module != "undefined" && module.exports)
+// if (typeof module != "undefined" && module.exports)
+//
+//  module.exports = GODS;
 
-  module.exports = GODS;
+function filter(array, test) {
+  var passed = [];
+  for (var i = 0; i < array.length; i++) {
+    if (test(array[i]))
+      passed.push(array[i]);
+  }
+  return passed;
+}
+
+// Attempting find gods created within the last year
+
+print(filter(GODS, function(name) {
+        return name.release > 1357016400000 ;
+}));
+
