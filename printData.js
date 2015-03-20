@@ -2,7 +2,7 @@ load('calcFuncs.js');
 load('drawFuncs.js');
 load('TextCell.js');
 load('UnderlinedCell.js');
-load('phones.js');
+load('gods.js');
 function dataTable(data) {
   var keys = Object.keys(data[0]);
   var headers = keys.map(function(name) {
@@ -16,4 +16,4 @@ function dataTable(data) {
   return [headers].concat(body);
 }
 
-print(drawTable(dataTable(PHONES)));
+print(drawTable(dataTable(GODS)));
